@@ -17,9 +17,9 @@
   $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
   $yAxisIntersections: -$minWidth * $slope + $minSize;
 
-  @return function clamp(
+  @return clamp(
     #{$minSize * 1rem},
-    #{$yAxisIntersections * 1rem} + #{slope * 100vw},
+    #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
     #{$maxSize * 1rem}
   );
 }
