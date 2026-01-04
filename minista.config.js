@@ -78,9 +78,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @use 'helpers' as *;
+        @use 'helpers' as *; 
         `,
-        silenceDeprecations: ['legacy-js-api']
+        silenceDeprecations: ['legacy-js-api'],
       },
       less: {},
       stylus: {},
